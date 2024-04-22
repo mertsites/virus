@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>klik dan als je niet bang bent bangerik</title>
+    <style>
+        #redButton {
+            background-color: red;
+            border: none;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Maak de knop rond */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="redButton" onclick="openYouTube()"></button>
+
+    <script>
+        function openYouTube() {
+            for (let i = 0; i < 100; i++) {
+                window.open('https://www.youtube.com', '_blank');
+            }
+        }
+    </script>
+</body>
+</html>
